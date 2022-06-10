@@ -37,7 +37,7 @@ height: auto;
 
 }
 body{
-    background-image: url("Component 2.svg");
+    background-image: url("img/background-port.svg");
     background-color: #1C1D28;
     background-repeat: no-repeat;
     display: flex;
