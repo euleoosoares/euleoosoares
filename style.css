@@ -1,42 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.atalho{
+
+.atalho {
     position: absolute;
     width: 800px;
     height: 27px;
-    left: 367px;
+    left: 565px;
     top: 10px;
-    
+
     font-family: 'Rubik', sans-serif;
-    
+
     /* identical to box height */
-    
+
     display: flex;
     align-items: center;
+
+    color: #97a1b0;
+
+}
+@media screen and (max-width: 778px) {
+    .atalho {
+        display: none;
+    }
     
-    color: #484954;
-
 }
-.logo{
+
+.atalho2 {
     position: absolute;
-width: 140px;
-height: 50px;
-left: 26px;
-top: 20px;
-width: auto;
-height: auto;
+    width: 800px;
+    height: 27px;
+    left: 595px;
+    top: 720px;
 
+    font-family: 'Rubik', sans-serif;
 
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #97a1b0;
 
 }
-body{
+@media screen and (max-width: 778px) {
+    .atalho2 {
+        display: none;
+    }
+    
+}
+
+
+.logo {
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 26px;
+    top: 20px;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+@media screen and (max-width: 778px) {
+    .logo {
+        width: 110px;
+        height: 50px;
+        left: 5px;
+        top: 5px;
+    }
+}
+
+body {
     background-image: url("img/background-port.svg");
     background-color: #1C1D28;
     background-repeat: no-repeat;
@@ -46,11 +88,19 @@ body{
     min-height: 100vh;
     background-size: cover;
 }
-h1{
+
+@media screen and (max-width: 778px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+h1 {
     color: rgb(208, 208, 208);
     font-size: 30px;
 }
-.container{
+
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -59,12 +109,13 @@ h1{
     flex-wrap: wrap;
     z-index: 1;
 }
-.container .card{
+
+.container .card {
     position: relative;
     width: 280px;
     height: 300px;
     margin: 30px;
-    background-color: rgba(255 , 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.03);
     padding: 10px;
     border-radius: 15px;
     overflow: hidden;
@@ -72,18 +123,29 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.container .card .content{
+
+.container .card .content {
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
     transition: 0.5s;
     opacity: 0;
 }
-.container .card:hover .content{
+@media screen and (max-width: 679px) {
+    .container .card .content {
+        transform: none;
+        transition: none;  
+        opacity: 1;
+    }
+    
+}
+
+.container .card:hover .content {
     transform: translateY(0px);
     opacity: 1;
 }
-.container .card .content h2{
+
+.container .card .content h2 {
     position: absolute;
     top: -80px;
     right: 30px;
@@ -91,19 +153,22 @@ h1{
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
 }
-.container .card .content h3{
+
+.container .card .content h3 {
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
 }
-.container .card .content p{
+
+.container .card .content p {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
 }
-.container .card .content a{
+
+.container .card .content a {
     position: relative;
-    display:inline-block;
+    display: inline-block;
     padding: 8px 20px;
     margin-top: 15px;
     background: #fff;
