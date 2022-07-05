@@ -7,7 +7,7 @@
   <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=euleoosoares&layout=compact&hide_border=true&title_color=FFCA00&text_color=FFCA00&bg_color=0d1117" />
 </div>
 
-  ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
+  ![Snake animation](https://github.com/euleoosoares/euleoosoares/blob/output/github-contribution-grid-snake.svg)
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=euleoosoares&theme=dracula&row=2&no-bg=true&column=3&margin-w=15&margin-h=15" />
